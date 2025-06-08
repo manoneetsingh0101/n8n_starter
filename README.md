@@ -143,7 +143,7 @@ docker --version
 1. Buy a domain from any registrar.
 2. Add A Records in your DNS settings:
 
-### Example for `n8n.thapatechnical.in`
+### Example for `n8n.yourdomain.com`
 
 #### A Record (Main)
 
@@ -160,7 +160,7 @@ docker --version
 ### Verify DNS:
 
 ```bash
-nslookup n8n.thapatechnical.in
+nslookup n8n.yourdomain.in
 ```
 
 ---
@@ -176,7 +176,7 @@ sudo apt install git
 Clone repo:
 
 ```bash
-git clone https://github.com/thapatechnical/n8n_starter.git
+git clone https://github.com/manoneetsingh0101/n8n_starter.git
 cd n8n_starter
 ```
 
@@ -229,12 +229,12 @@ sudo nano Caddyfile
 Paste and modify the following:
 
 ```
-n8n.thapatechnical.in {
+n8n.yourdomain.com {
     reverse_proxy localhost:5678
 }
 
-www.n8n.thapatechnical.in {
-    redir https://n8n.thapatechnical.in{uri}
+www.n8n.yourdomain.com {
+    redir https://n8n.yourdomain.com{uri}
 }
 ```
 
@@ -250,4 +250,4 @@ sudo systemctl restart caddy
 
 ## ✅ Access Your n8n Instance
 
-Visit: `https://n8n.thapatechnical.in` in your browser — your instance is now live! 🎉
+Visit: `https://n8n.yourdomain.com` in your browser — your instance is now live! 🎉
